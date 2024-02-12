@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Contract Interaction</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Simple Contract Interaction</h1>
+
+    <!-- Add Student Form -->
+    <h2>Add Student</h2>
+    <form id="addStudentForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+        <label for="studentAddress">Student Address:</label>
+        <input type="text" id="studentAddress" name="studentAddress" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <!-- Add Document Form -->
+    <h2>Add Document</h2>
+    <form id="addDocumentForm">
+        <label for="studentAddressDoc">Student Address:</label>
+        <input type="text" id="studentAddressDoc" name="studentAddressDoc" required>
+        <label for="documentName">Document Name:</label>
+        <input type="text" id="documentName" name="documentName" required>
+        <label for="documentHash">Document Hash:</label>
+        <input type="text" id="documentHash" name="documentHash" required>
+        <button type="submit">Add Document</button>
+    </form>
+
+    <!-- Document Details -->
+    <h2>Document Details</h2>
+    <div id="documentDetails"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
