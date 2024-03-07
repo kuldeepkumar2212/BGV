@@ -10,7 +10,8 @@ const web3 = new Web3('http://localhost:7545'); // Connect to Ganache
 //const ipfs = ipfsClient.create(); // Connect to IPFS
 
 // Contract ABI and Address (replace with your actual ABI and address)
-const contractABI = JSON.parse(fs.readFileSync('C:/Users/91988/Documents/BGV/build/contracts/BGV.json', 'utf8')); // Path to your ABI file
+
+const contractABI = JSON.parse(fs.readFileSync('../build/contracts/BGV.json', 'utf8')); // Path to your ABI file
 const contractAddress = '0x92326909a7a1e0659Da109C45ded8C07cA40F9e6';
 
 // Initialize contract instance
