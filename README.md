@@ -10,6 +10,8 @@
 ## Deploy the contract using HardHat on the port '8545' or '7545'(Ganache)
 - `npx hardhat run deploy.js --network development`
 
+## In another terminal run hardhat network
+- `npx hardhat node`
 ### copy the contract address and sender address
 
 # ------------RUNNING BACKEND---------------
